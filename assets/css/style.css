@@ -7,7 +7,6 @@
     text-align: center;
     color: white;
     padding: 3rem;
-    /* background: linear-gradient( rgba(155, 82, 82, 0.75), rgba(155, 82, 82, 0.75)), url("../img/fondo-header.webp"); */
     background: linear-gradient( rgba(7, 5, 12, 0.75), rgba(7, 5, 12, 0.75)), url("../img/fondo-header.webp");
     background-size: cover;
 }
@@ -18,11 +17,11 @@
 }
 
 .karina{
-    height: 13rem;
+    height: 25rem;
     width: auto;
     border-radius: 100%;
-    
 }
+
 .card_name{
     font-size: 2rem;
     padding: 1.5rem;
@@ -66,4 +65,38 @@
 }
 .btn_web{
     background-color: rgb(200, 191, 231);;
+}
+
+.copy {
+    background-color: black;
+    color: #ffff;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.dev{
+    color: #ffff;
+}
+
+
+@media (max-width: 490px) {
+    .card_title{
+        font-size: 2rem;
+    }
+    .karina{
+        height: 12rem;
+    }
+    .card_name{
+        font-size: 1.2rem;
+    }
+    .card_text{
+        font-size: 1rem;
+    }
+    .ico{
+        font-size: 1.3rem;
+    }
+    .contact_btn{
+        font-size: 1rem;
+    }
 }
