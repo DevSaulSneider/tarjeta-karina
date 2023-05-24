@@ -8,7 +8,7 @@
     <meta name="title" content="Karina Servan">
     <meta name="description"
         content="Asistente Administrativo Karina Servan de la empresa FC Ingeniería Construcción S.A.C">
-    <title>Karina Servan</title>
+    <title>.:: Karina Servan ::.</title>
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://devsaulsneider.github.io/tarjeta-karina/">
@@ -28,46 +28,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/style.css?=v01">
-    <link rel="shortcut icon" href="assets/img/karina.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="shortcut icon" href="public/assets/img/user.jpg" type="image/x-icon">
 </head>
 
 <body>
     <div id="preloader">
         <div class="line"></div>
     </div>
+
     <header>
-        <div class="card">
-            <h1 class="card_title">Asistente Administrativo</h1>
-            <img class="karina" src="assets/img/karina.jpg" alt="asistente administrativo">
-            <h2 class="card_name">Karina Steffanny Servan Tornero</h2>
-            <p class="card_text">
-                Asistente Administrativo de la empresa <strong>FC Ingenier&iacute;a Construcci&oacute;n S.A.C.</strong>
-                encargada de la
-                documentacion necesaria de la empresa que desea, archivar facturacion entre otras funciones Lorem ipsum
-                dolor, sit amet consectetur adipisicing elit. Alias veritatis, optio id corporis, consectetur tenetur
-                natus odit nulla dolor ratione labore dicta ipsum illo dolorum odio eos enim excepturi dignissimos?
-            </p>
-        </div>
+        <section class="header">
+            <div class="header_logo">
+                <img class="header__img" src="public/assets/img/logo.png" alt="FC Ingenieria y Construccion">
+            </div>
+            <p class="header_text">FC Ingenier&iacute;a Construcci&oacute;n S.A.C.</p>
+        </section>
     </header>
 
     <main>
-        <section class="contact">
-            <button id="BtnWhatsapp" class="contact_btn btn_whatsapp"><i
-                    class="fa-brands fa-whatsapp ico"></i>&nbsp;&nbsp;Escribeme por Whatsapp</button>
-            <button id="BtnGmail" class="contact_btn btn_gmail"><i
-                    class="fa-solid fa-envelope ico"></i>&nbsp;&nbsp;Enviame un correo</button>
-            <button id="BtnPhone" class="contact_btn btn_phone"><i
-                    class="fa-solid fa-phone ico"></i>&nbsp;&nbsp;Realizar una llamada</button>
-            <button id="BtnpageWeb" class="contact_btn btn_web"><i class="fa-solid fa-globe ico"></i>&nbsp;&nbsp;Visita
-                nuestra pagina Web</button>
+        <section class="card">
+            <h1 class="card_title">Asistente Administrativo</h1>
+            <img class="user" src="public/assets/img/user.jpg" alt="asistente administrativo">
+            <h2 class="card_name">Karina Steffanny Servan Tornero</h2>
+
+            <section class="contact">
+                <h1 class="contact_title">Cont&aacute;ctame</h1>
+                <div class="container_button">
+                    <button type="button" id="BtnWhatsapp" class="contact_btn btn_whatsapp"><i
+                            class="fa-brands fa-whatsapp ico"></i></button>
+                    <button type="button" id="BtnGmail" class="contact_btn btn_gmail"><i
+                            class="fa-solid fa-envelope ico"></i></button>
+                    <button type="button" id="BtnPhone" class="contact_btn btn_phone"><i
+                            class="fa-solid fa-phone ico"></i></button>
+                    <button type="button" id="BtnpageWeb" class="contact_btn btn_web"><i
+                            class="fa-solid fa-globe ico"></i></button>
+                    <button type="button" id="BtnPdf" class="contact_btn btn_pfd"><i
+                            class="fa-solid fa-file-pdf ico"></i></button>
+                </div>
+            </section>
+
+            
+        </section>
+
+        <section class="main">
+            <section class="slider-container">
+                <h2 class="slider_title">Proyectos de FC Ingenier&iacute;a Construcci&oacute;n S.A.C.</h2>
+                <div class="slide_img"></div>
+            </section>
         </section>
     </main>
 
     <footer class="copy">
-        <p>&copy;2023 Todos los derechos son Reservados | <a class="dev" href="#">DevSND</a></p>
+        <p>&copy;<span id="currentYear"></span> Todos los derechos son Reservados | <a class="dev" href="#">DevSND</a>
+        </p>
     </footer>
-    <script type="module" src="assets/js/main.js"></script>
+
+    <script type="module" src="public/js/main.js"></script>
 </body>
 
 </html>
