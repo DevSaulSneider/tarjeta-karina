@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 /*--------------------------------------------------------------
@@ -18,7 +21,7 @@
 #preloader:before,
 #preloader:after {
     content: "";
-    background-color: rgb(0, 0, 0);
+    background-color: #250f0a;
     position: absolute;
     inset: 0;
     width: 50%;
@@ -44,7 +47,7 @@
 #preloader .line:before {
     content: "";
     position: absolute;
-    background-color: #a51616;
+    background-color: #fff;
     left: 0;
     top: 50%;
     width: 1px;
@@ -113,37 +116,58 @@
 /*--------------------------------------------------------------
 # Fin Preloader
 --------------------------------------------------------------*/
-header{
+header {
     position: sticky;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
 }
-.header{
+
+.header {
     display: flex;
     align-items: center;
     font-weight: bold;
     justify-content: space-between;
-    
+
 }
 
-.header_logo{
+.header_logo {
     max-width: 5rem;
     margin-left: 5px;
 }
-.header__img{
+
+.header__img {
     width: 100%;
 }
 
-.header_text{
-    margin-right: 15px;
+.header_text {
+    margin-right: 30px;
 }
 
-
+main{
+    background-color: #f4dcd7;
+}
+.ubication_container{
+    padding: 1rem 2rem 3rem 2rem;
+}
+.ubication_title{
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.ubication__map{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
 .card {
     text-align: center;
     color: white;
     padding: 3rem 0rem;
     background: linear-gradient(rgba(7, 5, 12, 0.75), rgba(7, 5, 12, 0.75)), url("../../public/assets/img/fondo-header.webp");
+    background: linear-gradient(rgba(103, 42, 29, 0.75), rgba(7, 5, 12, 0.75)), url("../../public/assets/img/fondo-header.webp");
     background-size: cover;
 }
 
@@ -179,17 +203,20 @@ header{
     text-align: center;
     margin-top: 1.5rem;
     font-size: 1.5rem;
+    padding-bottom: 1rem;
 }
-.container_button{
+
+/* .container_button {
     display: flex;
     align-items: center;
     margin: auto;
     flex-wrap: wrap;
     justify-content: center;
-}
+} */
+
 .contact_btn {
     border-radius: 50%;
-    padding: 20px;
+    padding: 11px;
     margin: 10px 30px;
     cursor: pointer;
     font-size: 0.8rem;
@@ -223,7 +250,7 @@ header{
 
 .slider-container {
     height: 15rem;
-    margin: 1rem 0.5rem;
+    margin: 3rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -289,16 +316,31 @@ header{
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 575px) {
+
     /* * {
         background-color: rgb(230, 230, 134);
     } */
-    .header_text{
+    .header_text {
         font-size: 2rem;
     }
-    .header_text{
+
+    .header_text {
         margin-right: 15px;
         margin: auto;
     }
+
+    .main{
+        padding: 2rem;
+    }
+
+    .contact_btn {
+        padding: 1.8rem;
+    }
+    
+    .ico {
+        font-size: 2.8rem;
+    }
+
     .slider-container {
         max-width: 35rem;
         height: 25rem;
@@ -309,16 +351,22 @@ header{
     .slide_img {
         background-size: cover;
     }
+
+    .ubication_container{
+        height: 20rem;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
     /* * {
         background-color: #b13333;
     } */
-    .header_text{
+    .header_text {
         font-size: 2.5rem;
     }
+
     .main {
         display: flex;
         justify-content: center;
@@ -326,35 +374,50 @@ header{
         flex-wrap: nowrap;
     }
 
-    .ico{
+    .contact_btn {
+        padding: 2rem;
+    }
+    
+    .ico {
         font-size: 3rem;
     }
 
     .slider-container {
         padding: auto;
         margin: 0px;
+        width: 50%;
+        height: 25rem;
+    }
+    .slide_img {
+        background-size: cover;
+    }
+    .ubication_container{
         height: 20rem;
+        width: 50%;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
     /* * {
         background-color: #84d9bc;
     } */
-    .header_text{
+    .header_text {
         font-size: 3rem;
     }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
     /* * {
         background-color: #cde835;
     } */
-    .header_text{
+    .header_text {
         font-size: 4rem;
     }
+
     .card_title {
         margin-bottom: 2.5rem;
         font-size: 5rem;
@@ -375,7 +438,8 @@ header{
     }
 
     .slider-container {
-        height: 30rem;
+        height: 45rem;
+        width: 50%;
     }
 
     .contact_title {
@@ -390,8 +454,15 @@ header{
         font-size: 5rem;
     }
 
-    .slider_title {
+    .slider_title, .ubication_title {
         font-size: 2rem;
+    }
+
+    
+
+    .ubication_container{
+        height: 38rem;
+        width: 50%;
     }
 
     .copy {
