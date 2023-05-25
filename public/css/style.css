@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
 }
 
 /*--------------------------------------------------------------
@@ -117,11 +114,11 @@
 # Fin Preloader
 --------------------------------------------------------------*/
 header {
-    position: sticky;
-    top: 0;
-    background-color: #fff;
+    position: fixed;
+    /* top: 0;
+    background-color: rgba(253, 253, 253, 0.8);
     font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+    font-weight: 700; */
 
 }
 
@@ -146,12 +143,14 @@ header {
     margin-right: 30px;
 }
 
-main{
-    background-color: #f4dcd7;
-}
+/* main{
+    background-color: #a7908d;
+} */
+
 .ubication_container{
-    padding: 1rem 2rem 3rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
 }
+
 .ubication_title{
     margin-bottom: 0.8rem;
     font-size: 1.5rem;
@@ -229,38 +228,45 @@ main{
 }
 
 .btn_whatsapp {
-    background-color: rgb(37, 211, 102);
+    background-color: rgb(253, 253, 253);
 }
 
 .btn_gmail {
-    background-color: rgb(216, 68, 55);
+    background-color: rgb(253, 253, 253);
 }
 
 .btn_phone {
-    background-color: rgb(173, 216, 230);
+    background-color: rgb(253, 253, 253);
 }
 
 .btn_web {
-    background-color: rgb(200, 191, 231);
+    background-color: rgb(253, 253, 253);
 }
 
 .btn_pfd {
-    background-color: rgb(255, 249, 249);
+    background-color: rgb(253, 253, 253);
 }
 
 .slider-container {
     height: 15rem;
-    margin: 3rem 0rem;
+    padding: 1rem 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
 }
 
 .slider_title {
     margin-bottom: 0.8rem;
     font-size: 1.5rem;
     text-align: center;
+    font-weight: bold;
+}
+
+.span_Title{
+    color: #9c584a;
+    font-family: "Fira Code";
+    font-weight: bold;
 }
 
 .slide_img {
@@ -344,7 +350,6 @@ main{
     .slider-container {
         max-width: 35rem;
         height: 25rem;
-        margin: auto;
         padding: 2rem;
     }
 
@@ -372,6 +377,7 @@ main{
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
+        gap: 5rem;
     }
 
     .contact_btn {
@@ -438,7 +444,7 @@ main{
     }
 
     .slider-container {
-        height: 45rem;
+        height: 40rem;
         width: 50%;
     }
 
@@ -457,8 +463,6 @@ main{
     .slider_title, .ubication_title {
         font-size: 2rem;
     }
-
-    
 
     .ubication_container{
         height: 38rem;

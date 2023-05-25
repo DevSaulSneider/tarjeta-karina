@@ -1,4 +1,4 @@
-import { EnviarCorreo, EnviarWhatsapp, Llamar, IrWeb, disableRightClick, DowloadPdf } from "./funciones.js";
+import { EnviarCorreo, EnviarWhatsapp, Llamar, IrWeb, disableRightClick, DowloadPdf, TypewriterAnimation } from "./funciones.js";
 
 // preloader
 const preloader = document.querySelector('#preloader');
@@ -21,6 +21,15 @@ const phone = document.querySelector("#BtnPhone");
 const web = document.querySelector("#BtnpageWeb");
 const pdf = document.querySelector("#BtnPdf");
 
+const title_slider = document.querySelector("#Typewriter");
+let text1 = 'Proyectos de Calidad';
+let text2 = '<span class="span_Title"> FC Ingenieria & Construccion SAC </span>';
+let suprimir = 7;
+
+const title_maps = document.querySelector("#title_maps");
+let oneText = 'Ubicanos Ahora';
+let twoText = '<span class="span_Title"> ¿Qu&eacute; Esperas? </span>';
+
 whatsapp.addEventListener("click", EnviarWhatsapp);
 email.addEventListener("click", EnviarCorreo);
 phone.addEventListener("click", Llamar);
@@ -29,3 +38,6 @@ pdf.addEventListener("click", DowloadPdf);
 
 const currentYear = document.querySelector("#currentYear");
 currentYear.innerHTML = new Date().getFullYear();
+
+TypewriterAnimation(title_slider, text1, text2, suprimir);
+TypewriterAnimation(title_maps, oneText, twoText, 5);
