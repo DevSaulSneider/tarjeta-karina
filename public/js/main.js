@@ -23,7 +23,7 @@ const pdf = document.querySelector("#BtnPdf");
 
 const title_slider = document.querySelector("#Typewriter");
 let text1 = 'Proyectos de Calidad';
-let text2 = '<span class="span_Title"> FC Ingenieria & Construccion SAC </span>';
+let text2 = '<span class="span_Title"> FC Ingenier&iacute;a Y Construccion SAC </span>';
 let suprimir = 7;
 
 const title_maps = document.querySelector("#title_maps");
