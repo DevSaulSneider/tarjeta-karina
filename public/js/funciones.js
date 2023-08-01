@@ -29,22 +29,5 @@ function DowloadPdf() {
     a.click();
 }
 
-function TypewriterAnimation(element, text1, text2, dlet) {
-    const typewriter = new Typewriter(element, {
-        loop: true,
-        delay: 75,
-    });
-
-    typewriter
-        .pauseFor(2500)
-        .typeString(text1)
-        .pauseFor(300)
-        .deleteChars(dlet)
-        .typeString(text2)
-        .pauseFor(1000)
-        .start();
-}
-
 const Llamar = () => window.location.href = "tel:+51 925 123 534";
-const IrWeb = () => window.location.href = "https://fcsac.com/";
 const disableRightClick = (e) => e.preventDefault();

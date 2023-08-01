@@ -6,7 +6,6 @@ document.addEventListener('contextmenu', disableRightClick); //deshabilita el cl
 const whatsapp = document.querySelector("#BtnWhatsapp");
 const email = document.querySelector("#BtnGmail");
 const phone = document.querySelector("#BtnPhone");
-const web = document.querySelector("#BtnpageWeb");
 const pdf = document.querySelector("#BtnPdf");
 
 const title_slider = document.querySelector("#Typewriter");
