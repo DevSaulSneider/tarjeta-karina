@@ -1,5 +1,4 @@
 import { EnviarCorreo, EnviarWhatsapp, Llamar, IrWeb, disableRightClick, DowloadPdf, TypewriterAnimation } from "./funciones.js";
-
 // preloader
 const preloader = document.querySelector('#preloader');
 if (preloader) {
@@ -41,3 +40,10 @@ currentYear.innerHTML = new Date().getFullYear();
 
 TypewriterAnimation(title_slider, text1, text2, suprimir);
 TypewriterAnimation(title_maps, oneText, twoText, 5);
+
+function pdf() {
+    var doc = new jsPDF();
+
+    doc.text("Hello world!", 10, 10);
+    doc.save("a4.pdf");
+}
