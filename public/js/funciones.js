@@ -1,4 +1,4 @@
-export { EnviarCorreo, EnviarWhatsapp, Llamar, IrWeb, disableRightClick, DowloadPdf, TypewriterAnimation };
+export { EnviarCorreo, EnviarWhatsapp, Llamar, disableRightClick, DowloadPdf };
 
 function EnviarWhatsapp() {
     let numero = "+51 925 123 534";
@@ -10,8 +10,8 @@ function EnviarWhatsapp() {
 
 function EnviarCorreo() {
     let destinatario = "karinaservan@outlook.es";
-    let asunto = "Asunto de Prueba";
-    let mensajeEmail = "Este es un mensaje de prueba";
+    let asunto = "Servicio de Administracion";
+    let mensajeEmail = "Buen dia Srta Karina Servan, vengo desde su sitio web \n...";
     let encodedDestinatario = encodeURIComponent(destinatario);
     let encodedAsunto = encodeURIComponent(asunto);
     let encodedMensaje = encodeURIComponent(mensajeEmail);
